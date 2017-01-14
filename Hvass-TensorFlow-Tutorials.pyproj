@@ -1,0 +1,91 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{fc833d3c-403f-41e4-b5e3-b2844ce2049f}</ProjectGuid>
+    <ProjectHome />
+    <StartupFile>files.py</StartupFile>
+    <SearchPath />
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <ProjectTypeGuids>{888888a0-9f3d-457c-b088-3a5042f75d52}</ProjectTypeGuids>
+    <LaunchProvider>Standard Python launcher</LaunchProvider>
+    <InterpreterId />
+    <InterpreterVersion />
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)' == 'Debug'" />
+  <PropertyGroup Condition="'$(Configuration)' == 'Release'" />
+  <PropertyGroup>
+    <VisualStudioVersion Condition=" '$(VisualStudioVersion)' == '' ">10.0</VisualStudioVersion>
+    <PtvsTargetsFile>$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets</PtvsTargetsFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="cache.py" />
+    <Compile Include="cifar10.py" />
+    <Compile Include="convert.py" />
+    <Compile Include="dataset.py" />
+    <Compile Include="download.py" />
+    <Compile Include="files.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="inception.py" />
+    <Compile Include="inception5h.py" />
+    <Compile Include="kernix.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="knifey.py" />
+    <Compile Include="vgg16.py" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="images\02_convolution.png" />
+    <Content Include="images\02_convolution.svg" />
+    <Content Include="images\02_network_flowchart.png" />
+    <Content Include="images\02_network_flowchart.svg" />
+    <Content Include="images\06_network_flowchart.png" />
+    <Content Include="images\06_network_flowchart.svg" />
+    <Content Include="images\07_inception_flowchart.png" />
+    <Content Include="images\08_transfer_learning_flowchart.png" />
+    <Content Include="images\08_transfer_learning_flowchart.svg" />
+    <Content Include="images\09_transfer_learning_flowchart.png" />
+    <Content Include="images\09_transfer_learning_flowchart.svg" />
+    <Content Include="images\11_adversarial_examples_flowchart.png" />
+    <Content Include="images\11_adversarial_examples_flowchart.svg" />
+    <Content Include="images\12_adversarial_noise_flowchart.png" />
+    <Content Include="images\12_adversarial_noise_flowchart.svg" />
+    <Content Include="images\13_visual_analysis_flowchart.png" />
+    <Content Include="images\13_visual_analysis_flowchart.svg" />
+    <Content Include="images\14_deepdream_flowchart.png" />
+    <Content Include="images\14_deepdream_flowchart.svg" />
+    <Content Include="images\14_deepdream_recursive_flowchart.png" />
+    <Content Include="images\14_deepdream_recursive_flowchart.svg" />
+    <Content Include="images\15_style_transfer_flowchart.png" />
+    <Content Include="images\15_style_transfer_flowchart.svg" />
+    <Content Include="images\elon_musk.jpg" />
+    <Content Include="images\elon_musk_100x100.jpg" />
+    <Content Include="images\escher_planefilling2.jpg" />
+    <Content Include="images\giger.jpg" />
+    <Content Include="images\hulk.jpg" />
+    <Content Include="images\parrot.jpg" />
+    <Content Include="images\parrot_cropped1.jpg" />
+    <Content Include="images\parrot_cropped2.jpg" />
+    <Content Include="images\parrot_cropped3.jpg" />
+    <Content Include="images\parrot_padded.jpg" />
+    <Content Include="images\style1.jpg" />
+    <Content Include="images\style2.jpg" />
+    <Content Include="images\style3.jpg" />
+    <Content Include="images\style4.jpg" />
+    <Content Include="images\style5.jpg" />
+    <Content Include="images\style6.jpg" />
+    <Content Include="images\style7.jpg" />
+    <Content Include="images\style8.jpg" />
+    <Content Include="images\style9.jpg" />
+    <Content Include="images\willy_wonka_new.jpg" />
+    <Content Include="images\willy_wonka_old.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="images" />
+  </ItemGroup>
+  <Import Project="$(PtvsTargetsFile)" Condition="Exists($(PtvsTargetsFile))" />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.Common.targets" Condition="!Exists($(PtvsTargetsFile))" />
+</Project>

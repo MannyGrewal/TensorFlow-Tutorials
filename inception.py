@@ -609,7 +609,7 @@ if __name__ == '__main__':
     model = Inception()
 
     # Path for a jpeg-image that is included in the downloaded data.
-    image_path = os.path.join(data_dir, 'cropped_panda.jpg')
+    image_path = os.path.join(data_dir, 'medi.JPG')
 
     # Use the Inception model to classify the image.
     pred = model.classify(image_path=image_path)
